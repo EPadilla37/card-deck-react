@@ -1,0 +1,26 @@
+/* CardDeckApp.css */
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  width: 100px;
+  height: 150px;
+  margin: 10px;
+  border: 1px solid #000;
+  background-color: white;
+  position: relative;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: rotate(3deg);
+}
+
+.card:nth-child(even):hover {
+  transform: rotate(-3deg);
+}
